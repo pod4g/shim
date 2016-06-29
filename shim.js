@@ -18,11 +18,11 @@
 
     var push = arrayProto.push;
 
-    var class2type = {};
+    var objectProto = Object.prototype;
 
-    var toString = class2type.toString;
+    var toString = objectProto.toString;
 
-    var hasOwn = class2type.hasOwnProperty;
+    var hasOwn = objectProto.hasOwnProperty;
 
     var type = function( obj ){
         var t = typeof obj,s;
@@ -56,7 +56,7 @@
                      'constructor'];
     var dontEnumsLength = dontEnums.length;        
     
-    var isDev = true;
+    var isDev = false;
 
     var isFunction = function(fn){
         return type(fn) === 'function';
