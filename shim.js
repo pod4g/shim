@@ -1,7 +1,9 @@
 /**
- * ES5 和 ES6 pollfill技术
- * Author : liyanfeng
- * Date   : 2016-06-29
+ * ES5 & ES6 shim技术
+ * Author  : liyanfeng
+ * Date    : 2016-06-29
+ * Email   : pod4dop@gmail.com
+ * Licence : MIT
  * 
  * https://github.com/pod4g/shim
  */
