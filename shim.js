@@ -2,6 +2,8 @@
  * ES5 和 ES6 pollfill技术
  * Author : pod4g
  * Date   : 2016-06-29
+ * 
+ * https://github.com/pod4g/shim
  */
 
  (function(root){
