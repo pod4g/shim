@@ -12,6 +12,8 @@
     
     'use strict';
 
+    var Array = Array;
+
     var arrayProto = Array.prototype;
 
     var slice = arrayProto.slice;
@@ -19,6 +21,8 @@
     var concat = arrayProto.concat;
 
     var push = arrayProto.push;
+
+    var Object = Object;
 
     var objectProto = Object.prototype;
 
@@ -82,7 +86,7 @@
          * in the same order as that provided by a for...in loop (the difference being 
          * that a for-in loop enumerates properties in the prototype chain as well).
          */
-        Object.keyss = function( obj ){
+        Object.keys = function( obj ){
 
             console.log( obj );
             // debugger;
@@ -116,6 +120,23 @@
 
     }
 
+
+    if(notSupport(Object.create)){
+
+        Object.create = function(prototype){
+
+            var Ctor = function(){}
+
+            Ctor.prototype = prototype;
+
+            return new Ctor;
+
+        }
+
+    }
+
+
+    
 
 
 
