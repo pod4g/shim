@@ -1,0 +1,1 @@
+ES5 & ES6 shim. support IE7,IE8
