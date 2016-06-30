@@ -12,9 +12,9 @@
     
     'use strict';
 
-    var Array = Array;
+    var array = Array;
 
-    var arrayProto = Array.prototype;
+    var arrayProto = array.prototype;
 
     var slice = arrayProto.slice;
 
@@ -22,9 +22,9 @@
 
     var push = arrayProto.push;
 
-    var Object = Object;
+    var object = Object;
 
-    var objectProto = Object.prototype;
+    var objectProto = object.prototype;
 
     var toString = objectProto.toString;
 
@@ -77,7 +77,7 @@
     }
 
     // debugger;
-    if(notSupport(Object.keys)){
+    if(notSupport(object.keys)){
         /**
          * [keys description]
          * @param  {[type]} obj [description]
@@ -86,7 +86,7 @@
          * in the same order as that provided by a for...in loop (the difference being 
          * that a for-in loop enumerates properties in the prototype chain as well).
          */
-        Object.keys = function( obj ){
+        object.keys = function( obj ){
 
             console.log( obj );
             // debugger;
@@ -121,9 +121,9 @@
     }
 
 
-    if(notSupport(Object.create)){
+    if(notSupport(object.create)){
 
-        Object.create = function(prototype){
+        object.create = function(prototype){
 
             var Ctor = function(){}
 
